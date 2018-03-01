@@ -146,6 +146,12 @@ function computeAreaOfARectangle(length, width) {
     Hint: Use the arguments array
 **/
 function addAny() {
+
+    var total = 0;
+    for(var i in arguments){ total += arguments[i];}
+    return total;
+
+/*
     // your code here
     var arr = [];
     for (var i = 0; i < arguments.length; ++i){
@@ -153,8 +159,10 @@ function addAny() {
     }
     var sum = arr.reduce((a, b) => a + b, 0);
     return sum;
+*/
 
 }
+
 
 /*
     Write a function called "getFullName".
