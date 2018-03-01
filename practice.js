@@ -147,7 +147,12 @@ function computeAreaOfARectangle(length, width) {
 **/
 function addAny() {
     // your code here
-    return 
+    var arr = [];
+    for (var i = 0; i < arguments.length; ++i){
+          arr.push(arguments[i]);
+    }
+    var sum = arr.reduce((a, b) => a + b, 0);
+    return sum;
 
 }
 
